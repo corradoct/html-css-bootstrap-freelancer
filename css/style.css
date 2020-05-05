@@ -1,0 +1,209 @@
+ /* REGOLE GENERALI */
+body {
+  font-family: 'Roboto', 'Verdana';
+  padding-top: 70px;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a{
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper_70 {
+  max-width: 992px;
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 991px) {
+  .xs_margin_bottom_30 {
+    margin-bottom: 30px;
+  }
+}
+
+.ms_jumbotron {
+  padding: 30px 0;
+}
+
+.ms_section {
+  padding: 30px 0;
+}
+
+.ms_section .ms_intro {
+  text-align: center;
+}
+
+.ms_section button {
+  color: #fff;
+  background-color: #1abc9c;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+
+.ms_primary_color {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.ms_secondary_color {
+  background-color: #fff;
+  color: #000;
+}
+
+.ms_secondary_color .ms_divider {
+  color: #2c3e50;
+}
+
+.ms_divider {
+  font-size: 2.5em;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.ms_divider::before,
+.ms_divider::after {
+  content: '';
+  border: 2px solid;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ms_divider::before {
+  margin-right: .3em;
+}
+
+.ms_divider::after {
+  margin-left: .3em;
+}
+/* FINE REGOLE GENERALI */
+
+
+/* REGOLE HEADER */
+
+/* Regole nav */
+.ms_navbar {
+  height: 70px;
+  background-color: #2c3e50;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.ms_navbar a:hover {
+  color: #fff;
+}
+
+.ms_menu ul li:not(:last-child) {
+  padding-right: 20px;
+}
+.ms_logo {
+  text-align: left;
+}
+.ms_burger_menu i {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 5px 7px;
+}
+
+.fa-bars {
+  color: #a2aab2;
+}
+/* Fine regole nav */
+
+/* Regole header jumbotron */
+
+.ms_teaser {
+  text-transform: uppercase;
+}
+
+.ms_teaser img {
+  max-width: 20%;
+}
+/* Fine regole header jumbotron */
+
+/* FINE REGOLE HEADER */
+
+/* Regole main */
+
+.ms_portfolio_item {
+  margin-bottom: 30px;
+}
+
+.ms_portfolio_item img {
+  border-radius: 5px;
+}
+
+.ms_about_text {
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.fa-download {
+  padding-right: 5px;
+}
+
+.ms_contact_form {
+  text-align: left;
+}
+
+.ms_contact_form .ms_border_none {
+  box-shadow: none;
+  border: none;
+}
+
+/* Fine regole main */
+
+/* Regole footer */
+
+footer .footer_section {
+  padding: 30px 0;
+}
+footer .company_info {
+  background-color: #3a546c;
+  color: #fff;
+  font-size: 1.3em;
+
+}
+
+footer .company_info p a {
+  color: #1abc9c;
+}
+footer .company_credits {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+}
+
+.social_link {
+  text-align: center;
+}
+
+.link a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+}
+
+/* Fine regole footer */
