@@ -5,6 +5,7 @@ body {
   color: #fff;
   font-size: 1.5em;
   text-align: center;
+  min-width: 320px;
 }
 
 h1,
@@ -14,10 +15,6 @@ h2 {
 
 ul {
   list-style-type: none;
-}
-
-li {
-  display: inline-block;
 }
 
 a{
@@ -38,6 +35,10 @@ img {
   .xs_margin_bottom_30 {
     margin-bottom: 30px;
   }
+}
+
+.ms_list_no_margin {
+  margin: 0;
 }
 
 .ms_jumbotron {
@@ -79,22 +80,19 @@ img {
   padding-bottom: 15px;
 }
 
+.ms_divider i {
+  margin: 0 20px;
+}
+
 .ms_divider::before,
 .ms_divider::after {
   content: '';
   border: 2px solid;
   width: 100px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: super;
 }
 
-.ms_divider::before {
-  margin-right: .3em;
-}
-
-.ms_divider::after {
-  margin-left: .3em;
-}
 /* FINE REGOLE GENERALI */
 
 
@@ -112,11 +110,12 @@ img {
   color: #fff;
 }
 
-.ms_menu ul li:not(:last-child) {
+.ms_menu li:not(:last-child) {
   padding-right: 20px;
 }
 .ms_logo {
   text-align: left;
+  font-weight: bold;
 }
 .ms_burger_menu i {
   border: 1px solid #fff;
@@ -157,6 +156,14 @@ img {
   text-align: left;
 }
 
+.ms_download {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
 .fa-download {
   padding-right: 5px;
 }
@@ -167,7 +174,13 @@ img {
 
 .ms_contact_form .ms_border_none {
   box-shadow: none;
-  border: none;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.ms_contact_form .ms_border_none:focus {
+  border-bottom-color: lightgray;
 }
 
 /* Fine regole main */
@@ -195,15 +208,21 @@ footer .company_credits {
 
 .social_link {
   text-align: center;
+  width: 100%;
+  padding: 0;
 }
 
-.link a {
+.social_link li {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: calc(25% - 20px);
+}
+
+.fab {
   border: 1px solid #fff;
   border-radius: 50%;
-
+  width: 40px;
+  height: 40px;
+  line-height: 2em;
 }
 
 /* Fine regole footer */

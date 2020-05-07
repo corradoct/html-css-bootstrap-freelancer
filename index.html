@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, pixe">
     <title>Bootstrap Freelancer</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -18,16 +18,16 @@
         <div class="container">
           <div class="row">
             <!-- Inizio colonna logo -->
-            <div class="col-xs-6 col-md-6 ms_logo">
+            <div class="col-xs-9 col-sm-6 ms_logo">
               <a href="#">start bootstrap</a>
             </div>
             <!-- Fine colonna logo -->
 
             <!-- Inizio colonna navigazione -->
-            <div class="col-xs-6 text-right ms_menu">
+            <div class="col-xs-3 col-sm-6 text-right">
               <!-- Navigazione desktop -->
               <nav class="hidden-xs hidden-sm">
-                <ul>
+                <ul class="list-inline ms_menu ms_list_no_margin">
                   <li><a href="#">portfolio</a></li>
                   <li><a href="#">about</a></li>
                   <li><a href="#">contact</a></li>
@@ -140,7 +140,13 @@
               </div>
             </div>
             <!-- Fine about -->
-            <button type="button" class="btn btn-default"><i class="fas fa-download"></i>download</button>
+            <div class="text-center">
+              <a class="ms_download" href="#">
+                <i class="fas fa-download"></i>
+                download
+              </a>
+            </div>
+            <!-- <button type="button" class="btn btn-default"><i class="fas fa-download"></i>download</button> -->
           </div>
         </div>
       </section>
@@ -164,22 +170,18 @@
                   <label for="" class="sr-only">Name</label>
                   <input type="text" value="" class="ms_border_none form-control" placeholder="Name">
                 </div>
-                <hr>
                 <div class="form-group">
                   <label for="" class="sr-only">Email address</label>
                   <input type="Email" value="" class="ms_border_none form-control" placeholder="Email">
                 </div>
-                <hr>
                 <div class="form-group">
                   <label for="" class="sr-only">Phone number</label>
                   <input type="text" value="" class="ms_border_none form-control" placeholder="Phone number">
                 </div>
-                <hr>
                 <div class="form-group">
                   <label for="" class="sr-only">Message</label>
                   <textarea class="ms_border_none form-control" name="name" rows="8" cols="80" placeholder="Message"></textarea>
                 </div>
-                <hr>
                 <button type="button" class="btn btn-default">send</button>
               </form>
             </div>
@@ -206,14 +208,16 @@
             </div>
 
             <div class="col-xs-12 col-md-4">
-              <div class="xs_margin_bottom_30">
+              <div class="xs_margin_bottom_30 text-center">
                 <h2>around the web</h2>
-                  <ul class="row social_link">
-                    <li class="col-xs-3 link"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="col-xs-3 link"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li class="col-xs-3 link"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="col-xs-3 link"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                  </ul>
+                  <div class="social">
+                    <ul class="social_link">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                  </div>
               </div>
             </div>
 
